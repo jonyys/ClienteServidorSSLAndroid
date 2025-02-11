@@ -28,7 +28,7 @@ class UploadFragment : Fragment() {
     private lateinit var binding: FragmentUploadBinding
     private var fileUri: Uri? = null
     private var fileName: String? = null
-    private val serverHost = "172.20.10.8"  // IP del servidor
+    private val serverHost = "000.00.00.0"  // IP del servidor
     private val serverPort = 5556
 
     override fun onCreateView(
