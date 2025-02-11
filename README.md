@@ -79,5 +79,3 @@ Si clonas este repositorio y necesitas compilar el proyecto, sigue estos pasos:
 ## **🚀 Cómo ejecutar el proyecto**  
 🖥️ **Servidor** → Se ejecuta en **IntelliJ IDEA** (`ServidorSeguro.kt`).  
 📱 **Cliente (App Android)** → Se abre y ejecuta en **Android Studio**.  
-
-🚀 ¡Listo para usar SafeVault!
