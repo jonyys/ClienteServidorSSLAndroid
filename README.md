@@ -48,7 +48,7 @@ Para optimizar el tamaño del repositorio y proteger información sensible, se h
 Si clonas este repositorio y necesitas compilar el proyecto, sigue estos pasos:  
 
 1. **Reconstruir el proyecto**  
-   - Abre el proyecto en **Android Studio** y permite que **Gradle reconstruya los archivos** automáticamente.  
+   - Abre la carpeta Cliente2 en **Android Studio** y permite que **Gradle reconstruya los archivos** automáticamente.  
    - Si encuentras problemas, ejecuta el siguiente comando en la terminal del proyecto:  
      ```bash
      ./gradlew clean build
@@ -64,4 +64,20 @@ Si clonas este repositorio y necesitas compilar el proyecto, sigue estos pasos:
      ```
    - Sin este archivo, la autenticación con Firebase **no funcionará**.  
 
-> **Nota:** Asegúrate de configurar correctamente tu servidor MySQL y la IP del servidor en `HomeFragment.kt`. 🚀
+3. **Configuración del servidor MySQL**  
+   - Asegúrate de que MySQL esté instalado y configurado.  
+   - Modifica `DatabaseManager.kt` con las credenciales correctas de tu MySQL:  
+     ```kotlin
+     private const val URL = "jdbc:mysql://localhost:3306/PSP"
+     private const val USER = "root"
+     private const val PASSWORD = "tu_contraseña"
+     ```
+   - Importa la base de datos desde el archivo `database_schema.sql`.  
+
+---
+
+## **🚀 Cómo ejecutar el proyecto**  
+🖥️ **Servidor** → Se ejecuta en **IntelliJ IDEA** (`ServidorSeguro.kt`).  
+📱 **Cliente (App Android)** → Se abre y ejecuta en **Android Studio**.  
+
+🚀 ¡Listo para usar SafeVault!
