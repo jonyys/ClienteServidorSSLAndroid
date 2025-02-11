@@ -34,4 +34,34 @@ SafeVault es una aplicación que permite a los usuarios **subir, descargar y ges
 2. **Sube archivos** desde tu dispositivo.  
 3. **Elige si los archivos son privados o públicos**.  
 4. **Descarga archivos** almacenados en la base de datos desde diferentes dispostivos.  
-5. **Administra tus archivos** (cambiar nombre, eliminar, filtrar por tipo).  
+5. **Administra tus archivos** (cambiar nombre, eliminar, filtrar por tipo).
+
+---
+
+## **📂 Nota sobre el tamaño y seguridad del repositorio**  
+Para optimizar el tamaño del repositorio y proteger información sensible, se han realizado las siguientes acciones:  
+
+✅ **Se ha excluido el directorio `build/`** para reducir el tamaño del repositorio.  
+✅ **Se ha eliminado el archivo `google-services.json`** por razones de seguridad, ya que contiene credenciales de Firebase.  
+
+### **🔹 Configuración después de clonar el repositorio**  
+Si clonas este repositorio y necesitas compilar el proyecto, sigue estos pasos:  
+
+1. **Reconstruir el proyecto**  
+   - Abre el proyecto en **Android Studio** y permite que **Gradle reconstruya los archivos** automáticamente.  
+   - Si encuentras problemas, ejecuta el siguiente comando en la terminal del proyecto:  
+     ```bash
+     ./gradlew clean build
+     ```
+   - O desde **Android Studio**:  
+     `Build > Clean Project` y luego `Build > Rebuild Project`.  
+
+2. **Añadir Firebase (`google-services.json`)**  
+   - Descarga tu archivo `google-services.json` desde la [consola de Firebase](https://console.firebase.google.com/).  
+   - Colócalo en la ruta:  
+     ```
+     app/google-services.json
+     ```
+   - Sin este archivo, la autenticación con Firebase **no funcionará**.  
+
+> **Nota:** Asegúrate de configurar correctamente tu servidor MySQL y la IP del servidor en `HomeFragment.kt`. 🚀
