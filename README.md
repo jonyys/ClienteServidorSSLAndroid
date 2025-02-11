@@ -68,7 +68,7 @@ Si clonas este repositorio y necesitas compilar el proyecto, sigue estos pasos:
    - Asegúrate de que MySQL esté instalado y configurado.  
    - Modifica `DatabaseManager.kt` con las credenciales correctas de tu MySQL:  
      ```kotlin
-     private const val URL = "jdbc:mysql://localhost:3306/PSP"
+     private const val URL = "jdbc:mysql://localhost:3306/nombreDeLaBBDD"
      private const val USER = "root"
      private const val PASSWORD = "tu_contraseña"
      ```
