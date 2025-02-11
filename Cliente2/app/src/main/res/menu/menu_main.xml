@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cliente2.MainActivity">
+
+    <item
+        android:id="@+id/menu_upload"
+        android:title="action_upload"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/upload_menu"/>
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="action_logout"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/logout"/>
+</menu>
